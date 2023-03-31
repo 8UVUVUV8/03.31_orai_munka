@@ -1,0 +1,22 @@
+/*
+File: style.css
+Author: Szekeres András
+Copyright: 2023, Szekeres András
+Group: Szoft I-2 N
+Date: 2023-03-31
+Github: https://github.com/8UVUVUV8/
+Licenc: GNU GPL
+*/
+
+h2{
+    font-size: 20px;
+}
+body{
+    background-color: azure;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: bisque;
+    padding: 20px;
+}

@@ -1,3 +1,13 @@
+<!--
+File: index.html
+Author: Szekeres András
+Copyright: 2023, Szekeres András
+Group: Szoft I-2 N
+Date: 2023-03-31
+Github: https://github.com/8UVUVUV8/
+Licenc: GNU GPL
+-->
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -9,37 +19,27 @@
 </head>
 <body>
     <div class="container">
-        <h1>Sablon</h1>
+        <h1>Gyep számito</h1>
+        <h2>Ezzel a programmal két hatszögű telek lefedéséhez kellő gyeptégla mennyiségének a 75% tudod kiszámolni</h2>
         <div class="mt-3">
-            <label for="atelek" class="form-label">Első telek:</label>
-            <input type="number" name="atelek" id="atelek" class="form-control">
+            <label for="aTelek" class="form-label">Első telek oldalának hossza: </label>
+            <input type="number" name="aTelek" id="aTelek" class="form-control">
         </div>
         <div class="mt-3">
-            <label for="btelek " class="form-label">Második telek:</label>
-            <input type="number" name="btelek" id="btelek" class="form-control">
+            <label for="bTelek " class="form-label">Második telek oldalának hossza: </label>
+            <input type="number" name="bTelek" id="bTelek" class="form-control">
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              A telek
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              B telek
-            </label>
-          </div>
-
+        
         <div class="mt-3">
-            <button id="calcButton" class="btn btn-primary">Számít</button>
+            <button id="calcButton" class="btn btn-primary">Számítás</button>
         </div>
 
         <div class="mt-3 p-3" id="resault">
-            <label for="Actual" class="form-label">Tényleges éves kamat:</label>
-            <input type="text" id="Actual" class="form-control" readonly>
+            <label for="Res" class="form-label">Ennyi m² gyep fog kelleni</label>
+            <input type="text" id="Res" class="form-control" readonly>
         </div>
     </div>
+    <footer>Made by: Szekeres András</footer>
     <script src="js/bootstrap.js"></script>
     <script src="app.js"></script>
 </body>

@@ -1,26 +1,33 @@
-const atelek = document.querySelector('#atelek');
-const btelek = document.querySelector('#btelek');
-const radio1 = document.querySelector('#exampleRadios1');
-const radio2 = document.querySelector('#exampleRadios2');
-const Actual = document.querySelector('#Actual');
+/*
+File: app.js
+Author: Szekeres András
+Copyright: 2023, Szekeres András
+Group: Szoft I-2 N
+Date: 2023-03-31
+Github: https://github.com/8UVUVUV8/
+Licenc: GNU GPL
+*/
+
+const atelek = document.querySelector('#aTelek');
+const btelek = document.querySelector('#bTelek');
 const calcButton = document.querySelector('#calcButton');
+const resUlt = document.querySelector('#Res');
+
+
 
 calcButton.addEventListener('click', ()=>{
-    console.log("test :)");
     const Atelek = atelek.value;
     const Btelek = btelek.value;
-
-    if(radio1.checked){
-        let Elteproginfocalculusegy = ((3/2) * (Math.pow(Atelek,2)) * (Math.sqrt(3)))/2;
-        let Elteproginfocalculusketto = (3/2) * (Math.pow(Btelek,2)) * (Math.sqrt(3));
-        let osszeg =Elteproginfocalculusegy+Elteproginfocalculusketto
-        Actual.value=osszeg.toFixed(2);
-    }
-    else{
-        let Elteproginfocalculusegy = ((3/2) * (Math.pow(Btelek,2)) * (Math.sqrt(3)))/2;
-        let Elteproginfocalculusketto = (3/2) * (Math.pow(Atelek,2)) * (Math.sqrt(3));
-        let osszeg =Elteproginfocalculusegy+Elteproginfocalculusketto
-        Actual.value=osszeg.toFixed(2);
-    }
-
+    
+    console.log(Atelek,Btelek);
+    calculatusz(Atelek,Btelek);
 });
+
+function calculatusz(A,B){
+    let res = 0.75*((3/2)*((Math.pow(A,2)*Math.sqrt(3)))+(3/2)*((Math.pow(B,2)*Math.sqrt(3))))
+    resUlt.value = res;
+    jokivansag();
+};
+function jokivansag(){
+    alert("Minél előbbi jobbulást kívánok a tanár úrnak!");
+};
